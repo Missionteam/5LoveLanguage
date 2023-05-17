@@ -1,0 +1,98 @@
+header {
+    text-align: center;
+    background-color: #FBA5A5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAF0F0;
+    font-family: "Noto Sans JP";
+    min-height: 100vh;
+}
+p {    
+    font-weight: 500;
+}
+div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.dotted-border {
+    border: 1px dashed red;
+    width: 500px;
+    border-spacing: 20px;
+  }
+.description{
+    margin: 30px 0 30px;
+    text-align: center;
+}
+.question {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+/* .question p{
+    text-align: start;
+    margin-left: 30px;
+} */
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button {
+    width: 250px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .button.selected {
+    background-color: rgb(255, 136, 136);
+    color: white;
+  }
+
+  #resultButton{
+    margin: 40px 0 40px;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    h1{
+        font-size: 26px;
+    }
+    .buttons {
+      flex-direction: column;
+    }
+    .dotted-border {
+        width: 300px;
+      }
+    .button {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    #resultButton{
+        margin: 20px;
+    }
+  }
