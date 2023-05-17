@@ -14,7 +14,15 @@
     border: 1px solid black;
     border-radius: 30px;
     cursor: pointer;
-    display: inline;
     margin: 20px auto 30px auto;
   }
-
+.mainResult{
+    margin: 40px;;
+}
+#makeHappiness{
+    width: 250px;
+    margin-bottom: 10px;
+}
+#takeTest{
+    width: 250px;
+}
