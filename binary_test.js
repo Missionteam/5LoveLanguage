@@ -1,3 +1,13 @@
+
+function getQueryParams(url) {
+  const queryParams = {};
+  url.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+      queryParams[key] = value;
+  });
+  return queryParams;
+}
+
+const queryParams = getQueryParams(window.location.href);
 const questions = document.querySelectorAll('.question');
 const resultButton = document.getElementById('resultButton');
 const result = document.getElementById('result');
@@ -37,7 +47,9 @@ resultButton.addEventListener('click', () => {
   }  else {
     diagnosis = '診断に失敗しました';
   }
-  window.location.href = 'result.html?diagnosis=' + diagnosis;
-  // result.textContent = '診断結果: '+ diagnosis;
-
+  if(queryParams.user === 'b'){
+    window.location.href = 'b_result.html?diagnosis=' + diagnosis;
+  }else{
+  window.location.href = 'a_result.html?diagnosis=' + diagnosis;
+  }
 });
