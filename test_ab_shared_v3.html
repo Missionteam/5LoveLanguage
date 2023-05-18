@@ -1,4 +1,4 @@
-<!-- 共有された側が、また診断を受けていない場合の画面 -->
+<!-- 共有された側が、既に診断を完了している場合の画面 -->
 <!-- 診断結果を表示させるにはURLの最後に?diagnosis=aと追加してください -->
 <!DOCTYPE html>
 <html lang="ja">
@@ -14,6 +14,7 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-WWZ2V5DVHT');
     </script>
 
@@ -34,14 +35,30 @@
             <h1 id="result"></h1>
             <div>
                 <p id="resultText"></p>
-            </div>
-            <div class="shareBtnDiv">
-                <div class="shareButton" id="makeHappiness">恋人を喜ばせる</div>
-                <a href="index.html?user=b">
-                    <div class="shareButton" id="takeTest">自分も診断を受けてみる</div>
-                </a>
+                <p>そんなパートナーへのおすすめは…</p>
             </div>
         </div>
+        <!-- <div>
+            <p class="giftlist_text">〈そんなパートナーへの<br>　　おすすめギフトリスト〉</p>
+        </div> -->
+        <div class="shareBtnDiv">
+
+                   
+                    <div class="scroll-item" id="scroll-single">
+                        <a href="https://plus-happiness-about.webflow.io/massage/">
+                            <button class="mattari_button" id="card-single">
+                                <div class="mattari_image">
+                                    <img src="https://basefile.akamaized.net/plushapiness-base-shop/6460607ee82fe/11.png"
+                                        alt="Example image">
+                                </div>
+                                <div class="mattari_text">
+                                    マッサージでおもてなし
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+
     </main>
     <script src="partner_result.js"></script>
     <script>

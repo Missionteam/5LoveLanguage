@@ -29,3 +29,85 @@
 .shareBtnDiv{
     margin-top: 20px;
 }
+
+.giftlist_text {
+    font-size:14px;
+    color:#473131;
+    font-family: Noto Sans JP;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.shareButton_v2 {
+    margin: 40px 0 40px;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px auto 30px auto;
+}
+
+
+.wrapper {
+    max-width: 800px; /* 一定の範囲を800pxに指定 */
+    overflow-x: scroll;
+    width: 98vw;
+    margin-bottom: 50px;
+    }
+
+.scroll-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: block;
+    margin-left: 10px;
+    }
+
+    .scroll-item {
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #ccc;
+    margin-right: 10px;
+    }
+.mattari_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px; /* ボタンの幅を指定 */
+    height: 200px; /* ボタンの高さを指定 */
+    border: none; /* ボタンの枠線を消去 */
+    background-color: #fba5a5; /* ボタンの背景色を指定 */
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px 0 #962626;
+    cursor: pointer; /* マウスカーソルをポインターにする */
+}
+
+.mattari_image {
+    width: 80%; /* 画像の幅を指定 */
+}
+
+.mattari_image img{
+    width: 100%;
+    height: auto;
+}
+
+.mattari_text {
+    font-size: 15px; /* テキストのフォントサイズを指定 */
+    text-align: center; /* テキストを中央揃えにする */
+    font-family: Noto Sans JP ;
+    color: #473131;
+    margin-top: 20%;
+    
+}
+#scroll-single {
+    margin-bottom: 50px;
+}
+
+#card-single {
+    width: 200px;
+    height: 300px;
+}

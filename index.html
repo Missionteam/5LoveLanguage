@@ -2,6 +2,15 @@
 <html lang="ja">
 <head>
   <title>診断テスト</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWZ2V5DVHT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WWZ2V5DVHT');
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +19,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header><h1>5 Love Languages 診断</h1></header>
+  <header>
+    <h1>5 Love Languages 診断</h1>
+  </header>
   <main>
     <div class="description">
-    <p>心理学者のゲーリー・チャップマン<br>
-      によると、愛情表現には5つの方法が<br>
-      あるそうです。<br>
-      <br>
-      あなたの嬉しい愛情表現は？<br>
-      大切な人の喜ぶ愛情表現は？
-      <br>
-      回答を共有し、<br>
-      パートナーにも答えてもらいましょう！
-    </p>
-  </div>
+      <p>心理学者のゲーリー・チャップマン<br>
+        によると、愛情表現には5つの方法が<br>
+        あるそうです。<br>
+        <br>
+        あなたの嬉しい愛情表現は？<br>
+        大切な人の喜ぶ愛情表現は？
+        <br>
+        回答を共有し、<br>
+        パートナーにも答えてもらいましょう！
+      </p>
+    </div>
 
-      <div class="dotted-border"></div>
+    <div class="dotted-border"></div>
     <div class="question" data-question-id="1">
       <p>恋人にされたいのは？</p>
       <div class="buttons">
@@ -97,11 +109,12 @@
         <div class="button" data-choice="e">スキンシップを求めてくる</div>
       </div>
     </div>
-  
-  
+
+
     <div id="resultButton">結果を見る</div>
     <p id="result"></p>
   </main>
   <script src="binary_test.js"></script>
 </body>
+
 </html>

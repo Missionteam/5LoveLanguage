@@ -1,0 +1,101 @@
+<!-- 共有された側が、既に診断を完了している場合の画面 -->
+<!-- 診断結果を表示させるにはURLの最後に?diagnosis=aと追加してください -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>診断結果</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWZ2V5DVHT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WWZ2V5DVHT');
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="mainResult">
+            <div>
+                <p>あなたのパートナーにとって<br>
+                    重要な愛情表現は、</p>
+            </div>
+            <h1 id="result"></h1>
+            <div>
+                <p id="resultText"></p>
+                <!-- <p>そんなパートナーへのおすすめは…</p> -->
+            </div>
+        </div>
+        <div>
+            <p class="giftlist_text">〈そんなパートナーへの<br>　　おすすめギフトリスト〉</p>
+        </div>
+        <div class="shareBtnDiv">
+            <div class="wrapper">
+                <div class="scroll-container">
+               
+                    <div class="scroll-item">
+                        <a href="https://plus-happiness.webflow.io/">
+                            <button class="mattari_button">
+                                <div class="mattari_image">
+                                    <img src="https://basefile.akamaized.net/plushapiness-base-shop/64605ac135ec0/9.png"
+                                        alt="Example image">
+                                </div>
+                                <div class="mattari_text">
+                                    ひとり時間を<br>プレゼント
+                                    <div class=""></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="scroll-item">
+                        <a href="https://plus-happiness-about.webflow.io/massage/">
+                            <button class="mattari_button">
+                                <div class="mattari_image">
+                                    <img src="https://basefile.akamaized.net/plushapiness-base-shop/6460607ee82fe/11.png"
+                                        alt="Example image">
+                                </div>
+                                <div class="mattari_text">
+                                    マッサージで<br>おもてなし
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="scroll-item">
+                        <a href="{AboutPageURL}">
+                            <button class="mattari_button">
+                                <div class="mattari_image">
+                                    <img src="https://basefile.akamaized.net/plushapiness-base-shop/64605062d63f9/8.png"
+                                        alt="Example image">
+                                </div>
+                                <div class="mattari_text">
+                                    いつもと違う<br>デートをする！
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <script src="partner_result.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
