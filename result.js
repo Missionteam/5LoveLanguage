@@ -1,4 +1,4 @@
-
+// ver2
 
 function getQueryParams(url) {
     const queryParams = {};
@@ -7,6 +7,29 @@ function getQueryParams(url) {
     });
     return queryParams;
 }
+// const url = 'https://jsonplaceholder.typicode.com/posts/';
+
+// const postFetch = () => {
+//     fetch('https://api.line.me/v2/bot/message/broadcast', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'Authorization': 'Bearer {72EKhEm7+Eo85MHCMxU6i99kAdReDNaVnLubazbdX4HOqbL/5OHcwK2N1of02BZcCAP1YtrRjQaYHEoo4T1E+8DQ0SEMHwsrySnDw4GZ3D12MaPafwTOhZ6f2Pk0cUI27zyQwJRTHUp5Taijv2hUowdB04t89/1O/w1cDnyilFU=}',
+//   },
+//   body: JSON.stringify({
+//         "messages":[
+//             {
+//                 "type":"text",
+//                 "text":"Hello, world1"
+//             },
+//             {
+//                 "type":"text",
+//                 "text":"Hello, world2"
+//             }
+//         ]
+//     })
+// });
+// };
 
 const queryParams = getQueryParams(window.location.href);
 const result = document.getElementById('result');
@@ -43,14 +66,14 @@ const b_sharedBtn = document.getElementById("b_share");
 if (diagnosis) {
     if (a_sharedBtn) {
         a_sharedBtn.addEventListener('click', () => {
-            window.location.href = 'https://line.me/R/share?text=http://wp008561.wpx.jp/a_shared.html?diagnosis=' + diagnosis;
-        }
-        )
+            window.location.href = 'https://line.me/R/share?text=http://wp008561.wpx.jp/a_shared.html?diagnosis%3D' + diagnosis;
+        })
     }
     if (b_sharedBtn) {
         b_sharedBtn.addEventListener('click', () => {
-            window.location.href = 'https://line.me/R/share?text=http://wp008561.wpx.jp/ab_shared.html?diagnosis=' + diagnosis;
+            window.location.href = 'https://line.me/R/share?text=http://wp008561.wpx.jp/ab_shared.html?diagnosis%3D' + diagnosis;
         }
         )
     }
 }
+
