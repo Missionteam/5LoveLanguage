@@ -50,7 +50,9 @@ if(scores.a +scores.b +scores.c +scores.d +scores.e<10){
   }  else {
     diagnosis = '診断に失敗しました';
   }
-  if(diagnosis='none'){}else{
+  if(diagnosis ==='none'){
+    
+  }else{
   if(queryParams.user === 'b'){
     window.location.href = 'b_result.html?diagnosis=' + diagnosis;
   }else{
