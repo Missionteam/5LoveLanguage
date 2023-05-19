@@ -11,6 +11,8 @@ function getQueryParams(url) {
   const queryParams = getQueryParams(window.location.href);
   const result = document.getElementById('result');
   const resultText = document.getElementById('resultText');
+  const arigatou = document.getElementById('arigatou');
+
 
   if (queryParams.diagnosis) {
     if(queryParams.diagnosis === 'a'){
@@ -34,6 +36,11 @@ function getQueryParams(url) {
   } else {
     result.textContent = '診断結果が見つかりませんでした。';
   }
+
+    
+  arigatou.textContent += '「ありがとう」';
+
+
 
   const makeHapinessBtn = document.getElementById('makeHappiness');
   makeHapinessBtn.addEventListener('click', () => {

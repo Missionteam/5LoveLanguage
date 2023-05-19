@@ -28,7 +28,7 @@ function getQueryParams(url) {
 //             }
 //         ]
 //     })
-// });
+// })
 // };
 
 const queryParams = getQueryParams(window.location.href);
@@ -58,6 +58,8 @@ if (diagnosis) {
 } else {
     result.textContent = '診断結果が見つかりませんでした。';
 }
+
+
 
 const a_sharedBtn = document.getElementById("a_share");
 const b_sharedBtn = document.getElementById("b_share");

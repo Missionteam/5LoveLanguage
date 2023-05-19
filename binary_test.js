@@ -34,7 +34,10 @@ resultButton.addEventListener('click', () => {
   const maxScore = Math.max(scores.a, scores.b, scores.c,scores.d,scores.e);
   let diagnosis = '';
 
-  if (maxScore === scores.a) {
+if(scores.a +scores.b +scores.c +scores.d +scores.e<10){
+  diagnosis='none';
+}
+  else if (maxScore === scores.a) {
     diagnosis = 'a';
   } else if (maxScore === scores.b) {
     diagnosis = 'b';
@@ -47,9 +50,10 @@ resultButton.addEventListener('click', () => {
   }  else {
     diagnosis = '診断に失敗しました';
   }
+  if(diagnosis='none'){}else{
   if(queryParams.user === 'b'){
     window.location.href = 'b_result.html?diagnosis=' + diagnosis;
   }else{
   window.location.href = 'a_result.html?diagnosis=' + diagnosis;
-  }
+  }}
 });
